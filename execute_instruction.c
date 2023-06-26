@@ -30,7 +30,7 @@ void execute_instruction(stack_t **stack,
 	else if (strcmp(opcode, "pchr") == 0)
 		pchar(stack, line_number);
 	else if (strcmp(opcode, "rotl") == 0)
-                rotl(stack, line_number);
+		rotl(stack, line_number);
 	else
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
